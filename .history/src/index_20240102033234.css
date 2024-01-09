@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(59, 59, 59);
+  color: rgb(223, 223, 223);
+}
+
+.search {
+  margin: 0 auto;
+  text-align: center;
+  width: 950px;
+  display: grid;
+  place-items: center;
+}
+
+.search-bar {
+  display: flex;
+  place-items: center;
+}
+
+.search h1 {
+  font-size: 40px;
+  color: rgb(255, 114, 114);
+}
+
+.search input {
+  border: none;
+  height: 35px;
+  width: 350px;
+  font-size: 20px;
+  outline: none;
+  color: rgb(104, 104, 104);
+  font-weight: 700;
+  border-radius: 3px 0 0 3px;
+}
+
+.search input:focus {
+  outline: 2px grey solid;
+}
+
+.search input:focus + button {
+  outline: 2px grey solid;
+}
+
+.search button {
+  height: 37px;
+  padding: 1px 2px;
+  width: 100px;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background-color: rgb(255, 114, 114);
+  color: rgb(59, 59, 59);;
+  font-size: 16px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.list {
+  width: 950px;
+  margin: 100px auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: rgb(29, 29, 29);
+  width: 270px;
+  display: grid;
+  place-items: center;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(223, 223, 223);
+  width: 100%;
+  background: linear-gradient(to right, rgb(153, 153, 153), rgb(85, 85, 85), rgb(153, 153, 153), rgb(153, 153, 153));
+  background-size: 200% 200%;
+  animation: move-bg 10s linear infinite;
+}
+
+@keyframes move-bg {
+  0% { background-position: 0% 50%;}
+  100% { background-position: -100% 50%;}
+}
+
+.search {
+  margin: 100px auto 100px auto;
+  text-align: center;
+  width: 950px;
+  display: grid;
+  place-items: center;
+}
+
+.search-bar {
+  display: flex;
+  place-items: center;
+}
+
+.search h1 {
+  font-size: 40px;
+  color: rgb(255, 114, 114);
+}
+
+.search input {
+  border: none;
+  height: 35px;
+  width: 350px;
+  font-size: 20px;
+  outline: none;
+  color: rgb(104, 104, 104);
+  font-weight: 700;
+  border-radius: 3px 0 0 3px;
+}
+
+.search input:focus {
+  outline: 2px grey solid;
+}
+
+.search input:focus + button {
+  outline: 2px grey solid;
+}
+
+.search button {
+  height: 37px;
+  padding: 1px 2px;
+  width: 100px;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background-color: rgb(255, 114, 114);
+  color: rgb(59, 59, 59);;
+  font-size: 16px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.list {
+  width: 1100px;
+  margin: 100px auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: rgb(29, 29, 29);
+  text-align: center;
+  width: 290px;
+  height: 500px;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1150px) {
+
+  .search {
+    width: 100%;
+  }
+
+  .list {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .search h2 {
+    width: 90%;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .search input {
+    height: 28px;
+    width: 90%;
+  }
+  .search button {
+    height: 30px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 250px;
+    height: 440px;
+  }
+
+  .card img {
+    width: 70%;
+  }
+}

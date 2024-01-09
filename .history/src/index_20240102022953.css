@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(29, 29, 29);
+  color: rgb(202, 202, 202);
+}
+
+.search h1 {
+  font-size: 40px;
+}
+
+.search input {
+  border: none;
+  height: 30px;
+  width: 350px;
+  font-size: 26px;
+  outline: none;
+}
+
+.search input:focus {
+  outline: 2px grey solid;
+}
+
+.search button {
+  height: 30px;
+  width: 100px;
+  font-family: 'Inter', sans-serif;
+  border: none;
+}
